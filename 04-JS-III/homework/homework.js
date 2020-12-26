@@ -58,8 +58,7 @@ function dePalabrasAFrase(palabras) {
   for (var i= 0 ; i<palabras.length ; i++) {
     frase = frase + palabras [i] + ' ';
   }
-  
-  return frase;
+    return frase;
 }
 
 function arrayContiene(array, elemento) {
@@ -108,16 +107,16 @@ function numeroMasGrande(numeros) {
   // Devuelve el número más grande
   // Tu código:
   
-  var masgrande;
-  masgrande = numeros [0];
+  var elmasgrande;
+  elmasgrande = numeros [0];
 
   for (var i= 0 ; i<numeros.length ; i++) {
-    if (numeros [i] > masgrande ){
-      masgrande = numeros [i] ;
+    if (numeros [i] > elmasgrande ){
+      elmasgrande = numeros [i] ;
     }
     
   }
-  return masgrande;
+  return elmasgrande;
 
 }
 
@@ -131,8 +130,12 @@ function multiplicarArgumentos() {
   var cantArgumentos = arguments.length;
   var total = 1;
 
-  if (cantArgumentos === 0) {return 0;}
-  if (cantArgumentos === 1) {return arguments [0];}
+  if (cantArgumentos === 0) {
+    return 0;
+  }
+  if (cantArgumentos === 1) {
+    return arguments [0];
+  }
 
   if (cantArgumentos > 1) {
     for (var i= 0 ; i<cantArgumentos; i++) {
@@ -140,9 +143,7 @@ function multiplicarArgumentos() {
    }
   }
   return total;
-  
-
-}
+  }
 
 // No modificar nada debajo de esta línea
 // --------------------------------
